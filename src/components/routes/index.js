@@ -1,16 +1,18 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
+import Home from "./Home";
+import Showcase from "./Showcase";
 
 export default (
   <Switch>
     <Route exact path="/">
-      <p>Home page</p>
+      <Home />
     </Route>
-    <Route path="/about">
-      <p>About page</p>
+    <Route path="/showcase">
+      <Showcase />
     </Route>
-    <Route path="/faq">
-      <p>FAQ page</p>
+    <Route path="/contact">
+      <p>Contact</p>
     </Route>
   </Switch>
 );

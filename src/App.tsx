@@ -6,11 +6,9 @@ import routes from "./components/routes";
 
 export default () => (
   <div className="App">
-    <header className="App-header">
-      <Router>
-        <Nav />
-        {routes}
-      </Router>
-    </header>
+    <Router>
+      <Nav />
+      {routes}
+    </Router>
   </div>
 );

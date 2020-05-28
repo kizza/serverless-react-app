@@ -5,13 +5,19 @@ import styles from "./Nav.module.scss";
 export default () => (
   <ul className={styles.Nav}>
     <li>
-      <NavLink to="/">Home</NavLink>
+      <NavLink to="/" activeClassName={styles.active} exact>
+        Home
+      </NavLink>
     </li>
     <li>
-      <NavLink to="/about">About</NavLink>
+      <NavLink to="/about" activeClassName={styles.active}>
+        About
+      </NavLink>
     </li>
     <li>
-      <NavLink to="/faq">FAQ</NavLink>
+      <NavLink to="/faq" activeClassName={styles.active}>
+        FAQ
+      </NavLink>
     </li>
   </ul>
 );
